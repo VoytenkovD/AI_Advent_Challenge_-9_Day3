@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Advent Challenge #9 Day3 — четыре способа рассуждения</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="app__header">
+        <h1>Четыре способа рассуждения</h1>
+        <span class="app__note" id="app-note">загрузка конфигурации…</span>
+      </header>
+
+      <!-- поле ввода очищается при отправке, поэтому вопрос показываем здесь -->
+      <section class="question">
+        <span class="question__label">Вопрос</span>
+        <p id="question-text" class="muted">
+          Задайте задачу — она уйдёт во все четыре режима сразу, и ответы встанут рядом.
+        </p>
+      </section>
+
+      <main class="compare" id="compare"></main>
+
+      <footer class="app__input">
+        <textarea
+          id="input"
+          rows="2"
+          placeholder="Задача, которую прогоним через все четыре режима. Enter — отправить, Shift+Enter — перенос строки"
+        ></textarea>
+        <div class="app__input-side">
+          <button id="send">Сравнить все 4</button>
+          <span class="app__input-note">8 запросов к API</span>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/markdown.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>

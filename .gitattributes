@@ -1,0 +1,11 @@
+# В репозитории храним LF, в рабочей копии Windows Git развернёт CRLF сам.
+* text=auto eol=lf
+
+# .bat обязан быть с CRLF: cmd.exe не всегда корректно исполняет LF-скрипты
+*.bat text eol=crlf
+
+# Бинарники не трогаем
+*.png binary
+*.jpg binary
+*.ico binary
+*.pdf binary

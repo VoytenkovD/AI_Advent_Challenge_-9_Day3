@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+env/
+venv/
+.venv/
+
+# Секреты: ключ читается из ~/.secrets/ai-public и в репозиторий попадать не должен
+.secrets/
+*.key
+.env
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Visual Studio / VS Code
+.vs/
+*.user
+*.suo
